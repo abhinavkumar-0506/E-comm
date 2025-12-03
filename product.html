@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v o i d - Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+<header class="nav">
+    <div class="logo">v o i d</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span id="cart-count" class="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<section class="section product-page">
+    <div class="product-page-img">
+        <img src="images/hoodie1.jpg" alt="Black Oversized Hoodie">
+    </div>
+
+    <div class="product-page-info">
+        <h1>Black Oversized Hoodie</h1>
+        <p class="product-price big">₹1,499</p>
+        <p class="product-desc">
+            Relaxed fit hoodie, perfect for streetwear. Thick fabric, drop shoulder,
+            clean minimal front, pairs well with cargos and sneakers.
+        </p>
+
+        <p class="label">Size</p>
+        <div class="size-options">
+            <label><input type="radio" name="size" value="M"> M</label>
+            <label><input type="radio" name="size" value="L"> L</label>
+            <label><input type="radio" name="size" value="XL"> XL</label>
+        </div>
+
+        <!-- FULL CART SYSTEM BUTTON -->
+        <button class="btn add-to-cart"
+            data-name="Black Oversized Hoodie"
+            data-price="1499"
+            data-img="images/hoodie1.jpg">
+            Add to Cart
+        </button>
+
+        <a href="shop.html" class="link-small">← Back to shop</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 v o i d. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

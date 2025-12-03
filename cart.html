@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v o i d - Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="nav">
+    <div class="logo">v o i d</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<section class="section cart">
+    <h1 class="section-title">Your Cart</h1>
+
+    
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+        <p>Subtotal: <span id="cart-total">₹0</span></p>
+        <p>Shipping: <span>₹99</span></p>
+        <p class="total">Total: <span id="final-total">₹99</span></p>
+
+        <button class="btn" onclick="clearCart()">Clear Cart</button>
+        <button class="btn">Checkout</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 v o i d. All rights reserved.</p>
+</footer>
+</body>
+</html>

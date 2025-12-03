@@ -1,0 +1,41 @@
+.product-page { display: flex; gap: 60px; align-items: flex-start; }
+.product-page-img { flex: 1; }
+.product-page-info { flex: 1; padding-top: 20px; }
+
+.product-page-info h1 { font-size: 2.5rem; margin-bottom: 10px; }
+.product-price.big { font-size: 1.5rem; color: var(--color-text); margin-bottom: 30px; }
+.product-desc { color: var(--color-text-muted); margin-bottom: 40px; line-height: 1.8; }
+
+.link-small {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: var(--color-text-muted);
+}
+
+/* SIZE SELECTOR */
+.size-options { display: flex; gap: 10px; margin-bottom: 30px; }
+.size-options label { cursor: pointer; position: relative; }
+.size-options input[type="radio"] { display: none; }
+
+/* The visual box for sizes */
+.size-options label::before {
+    content: attr(data-val); /* Fallback if needed, but usually just styled box */
+}
+
+/* Styling the parent label text to look like a box */
+.size-options label {
+    padding: 10px 20px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.size-options input:checked + span, 
+.size-options label:has(input:checked) {
+    border-color: var(--color-text);
+    color: var(--color-text);
+    background-color: #222;
+}
